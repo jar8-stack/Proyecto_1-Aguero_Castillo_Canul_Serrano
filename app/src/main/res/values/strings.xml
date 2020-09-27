@@ -15,4 +15,19 @@
     <string name="dificultad_dificil">Dificil</string>
     <string name="text_habilitarpistas">Habilitar Pistas</string>
     <string name="text_nopistas">No. de Pistas</string>
+
+    <string-array name="nodepreguntas">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="nodepistas">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>
