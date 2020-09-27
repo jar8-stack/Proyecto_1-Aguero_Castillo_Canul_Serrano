@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Proyecto_1-Aguero_Castillo_Canul_Serrano</string>
+    <string name="app_name">Juego de Preguntas</string>
+    <!-- <string name="app_name">Proyecto_1-Aguero_Castillo_Canul_Serrano</string> -->
+    <string name="text_todos">Todos</string>
+    <string name="tema_arte">Arte</string>
+    <string name="tema_ciencia">Ciencia</string>
+    <string name="tema_cine">Cine</string>
+    <string name="tema_historia">Historia</string>
+    <string name="tema_programacion">Programación</string>
+    <string name="tema_culgeneral">Cultura General</string>
+    <string name="text_nopreguntas">No. de Preguntas</string>
+    <string name="text_dificultad">Dificultad</string>
+    <string name="dificultad_facil">Facil</string>
+    <string name="dificultad_medio">Medio</string>
+    <string name="dificultad_dificil">Dificil</string>
+    <string name="text_habilitarpistas">Habilitar Pistas</string>
+    <string name="text_nopistas">No. de Pistas</string>
 </resources>
