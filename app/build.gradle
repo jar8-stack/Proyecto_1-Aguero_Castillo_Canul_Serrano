@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.proyecto_1_aguero_castillo_canul_serrano"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
 dependencies {
@@ -33,5 +42,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //BOTONES CHIDOS
+    implementation "com.github.skydoves:elasticviews:2.0.8"
+
+    //BACKGROUND PARTICULAS
+    implementation 'com.github.glomadrian:Grav:1.1'
+
+    //LYFE CYCLE
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation 'androidx.fragment:fragment-ktx:1.2.5'
 
 }
