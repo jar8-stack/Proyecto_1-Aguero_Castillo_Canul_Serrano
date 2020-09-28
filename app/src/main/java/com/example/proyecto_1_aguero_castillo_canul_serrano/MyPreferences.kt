@@ -9,6 +9,14 @@ class MyPreferences(context : Context) {
     val PREFERENCES_CANTIDAD_PISTAS = "SharedPreferencesCantidadPistas"
     val PREFERENCES_PISTAS_ACTIVAS = "SharedPreferencesPistasActivas"
 
+    val PREFERENCES_TEMA_ARTE = "SharedPreferencesTemaArte"
+    val PREFERENCES_TEMA_CIENCIA = "SharedPreferencesTemaCiencia"
+    val PREFERENCES_TEMA_CINE = "SharedPreferencesTemaCine"
+    val PREFERENCES_TEMA_HISTORIA = "SharedPreferencesTemaHistoria"
+    val PREFERENCES_TEMA_PROGRAMACION = "SharedPreferencesTemaProgramacion"
+    val PREFERENCES_TEMA_CULTURA = "SharedPreferencesTemaCultura"
+
+
     val preferences = context.getSharedPreferences(PREFERENCES_NAME,Context.MODE_PRIVATE)
 
     fun getCantidadPreguntas() : Int{
@@ -50,4 +58,82 @@ class MyPreferences(context : Context) {
         editor.putBoolean(PREFERENCES_PISTAS_ACTIVAS, Activo)
         editor.apply()
     }
+
+    fun getTemaArte() : Boolean{
+        return preferences.getBoolean(PREFERENCES_TEMA_ARTE, false)
+    }
+
+    fun setTemaArte(Activo : Boolean){
+        val editor = preferences.edit()
+        editor.putBoolean(PREFERENCES_TEMA_ARTE, Activo)
+        editor.apply()
+    }
+
+    fun getTemaCiencia() : Boolean{
+        return preferences.getBoolean(PREFERENCES_TEMA_CIENCIA, false)
+    }
+
+    fun setTemaCiencia(Activo : Boolean){
+        val editor = preferences.edit()
+        editor.putBoolean(PREFERENCES_TEMA_CIENCIA, Activo)
+        editor.apply()
+    }
+
+    fun getTemaCine() : Boolean{
+        return preferences.getBoolean(PREFERENCES_TEMA_CINE, false)
+    }
+
+    fun setTemaCine(Activo : Boolean){
+        val editor = preferences.edit()
+        editor.putBoolean(PREFERENCES_TEMA_CINE, Activo)
+        editor.apply()
+    }
+
+    fun getTemaHistoria() : Boolean{
+        return preferences.getBoolean(PREFERENCES_TEMA_HISTORIA, false)
+    }
+
+    fun setTemaHistoria(Activo : Boolean){
+        val editor = preferences.edit()
+        editor.putBoolean(PREFERENCES_TEMA_HISTORIA, Activo)
+        editor.apply()
+    }
+
+    fun getTemaProgramacion() : Boolean{
+        return preferences.getBoolean(PREFERENCES_TEMA_PROGRAMACION, true)
+    }
+
+    fun setTemaProgramacion(Activo : Boolean){
+        val editor = preferences.edit()
+        editor.putBoolean(PREFERENCES_TEMA_PROGRAMACION, Activo)
+        editor.apply()
+    }
+
+    fun getTemaCultura() : Boolean{
+        return preferences.getBoolean(PREFERENCES_TEMA_CULTURA, false)
+    }
+
+    fun setTemaCultura(Activo : Boolean){
+        val editor = preferences.edit()
+        editor.putBoolean(PREFERENCES_TEMA_CULTURA, Activo)
+        editor.apply()
+    }
+
+    /*
+    PARA PODER REALIZAR LA CONSULTA DE LOS DATOS SE INSTANCIA NUESTRA CLASE MyPreference en donde queremos usar las varaibles, de esta forma:
+
+    val misPreferencias = MyPreferences(this)
+
+    OJO: La linea anterior va dentro del metodo OnCreate()
+
+    UNA VEZ YA INSTANCIADO NUESTRA CLASE MyPreference PODEMOS ACCEDER A LOS DATOS CON LOS METODOS DE ESTA CLASE, USANDO LA SIGUIENTE FORMA:
+
+    misPreferencias.getCantidadPreguntas()
+
+    TAMBIEN PUDIENDO ASIGNANDO A VARIABLES:
+
+    val miVariable = misPreferencias.getCantidadPreguntas()
+
+    OJO: Solo podemos usar los metodos que inicien con get ya que esos solo sirven para obtener, los metodos que inicen con set solo deben usarse en SettingActivity.
+     */
 }
