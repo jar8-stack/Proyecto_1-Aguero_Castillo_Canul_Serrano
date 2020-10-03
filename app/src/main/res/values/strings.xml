@@ -31,4 +31,396 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string name="false_button">FALSE</string>
+    <string name="true_buttom">TRUE</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">"Previous"</string>
+    <string name="answered_text">Done</string>
+
+    <string name="question_text_1">¿La luna es de queso?</string>
+    <string name="question_text_2">¿La mayonesa es un instrumento?</string>
+    <string name="question_text_3">¿La tierra es plana?</string>
+    <string name="question_text_4">¿Si al juicio a los expresidentes?</string>
+    <string name="question_text_5">¿Fue primero la gallina?</string>
+    <string name="question_text_6">¿La quesadilla lleva queso?</string>
+
+    <!-- Preguntas de arte-->
+
+    <!-- Preguntas de arte-->
+    <string name="question_Arte_1">¿Quien pinto el nacimiento de venus?</string>
+    <string name="r_question_Arte_1_1">Santiago el noble</string>
+    <string name="r_question_Arte_1_2">Botticelli</string>
+    <string name="r_question_Arte_1_3">Tiziano</string>
+    <string name="r_question_Arte_1_4">Oscar de la olla</string>
+
+    <string name="question_Arte_2">¿En que siglo nacio Diego Velázquez?</string>
+    <string name="r_question_Arte_2_1">Siglo XVI</string>
+    <string name="r_question_Arte_2_2">Siglo XVII</string>
+    <string name="r_question_Arte_2_3">Siglo XVIII</string>
+    <string name="r_question_Arte_2_4">Siglo XV</string>
+
+    <string name="question_Arte_3">¿En que museo esta la monalisa?</string>
+    <string name="r_question_Arte_3_1">Museo del prado</string>
+    <string name="r_question_Arte_3_2">Louvre</string>
+    <string name="r_question_Arte_3_3">Galeria Uffizi</string>
+    <string name="r_question_Arte_3_4">British Museum</string>
+
+    <string name="question_Arte_4">¿En que siglo nació Van Gogh?</string>
+    <string name="r_question_Arte_4_1">Siglo XX</string>
+    <string name="r_question_Arte_4_2">Siglo XIX</string>
+    <string name="r_question_Arte_4_3">Siglo XVII</string>
+    <string name="r_question_Arte_4_4">Siglo XVIII</string>
+
+    <string name="question_Arte_5">¿En que siglo se inició el renacimiento?</string>
+    <string name="r_question_Arte_5_1">Siglo XIV</string>
+    <string name="r_question_Arte_5_2">Siglo XV</string>
+    <string name="r_question_Arte_5_3">Siglo XIII</string>
+    <string name="r_question_Arte_5_4">Siglo XXI</string>
+
+    <string name="question_Arte_6">¿Qué nombre recibe el estilo arquitectónico de las construcciones árabes en la península?</string>
+    <string name="r_question_Arte_6_1">Arabesco</string>
+    <string name="r_question_Arte_6_2">Mozárabe</string>
+    <string name="r_question_Arte_6_3">Nazarí</string>
+    <string name="r_question_Arte_6_4">Arábigo</string>
+
+    <string name="question_Arte_7">¿En que año pinto Picasso el "Guernica"?</string>
+    <string name="r_question_Arte_7_1">1947</string>
+    <string name="r_question_Arte_7_2">1937</string>
+    <string name="r_question_Arte_7_3">1957</string>
+    <string name="r_question_Arte_7_4">1927</string>
+
+    <string name="question_Arte_8">¿Quien pinto la monalisa?</string>
+    <string name="r_question_Arte_8_1">Leonardo Di Caprio</string>
+    <string name="r_question_Arte_8_2">Leonardo Da Vinci</string>
+    <string name="r_question_Arte_8_3">Miguel Angel</string>
+    <string name="r_question_Arte_8_4">Loreto</string>
+
+    <string name="question_Arte_9">¿Quien hizo el mural de la capilla sixtina?</string>
+    <string name="r_question_Arte_9_1">San Agustin</string>
+    <string name="r_question_Arte_9_2">Miguel Angel</string>
+    <string name="r_question_Arte_9_3">Frida Khalo</string>
+    <string name="r_question_Arte_9_4">Hugo Lopez Mateo</string>
+
+    <string name="question_Arte_10"> Uno de estos artistas es mexicano</string>
+    <string name="r_question_Arte_10_1">Leonardo Da Vinci</string>
+    <string name="r_question_Arte_10_2">Frida Khalo</string>
+    <string name="r_question_Arte_10_3">Miguel Angel</string>
+    <string name="r_question_Arte_10_4">Augusto Compte</string>
+
+
+    <!-- Preguntas de Historia-->
+    <string name="question_Historia_1">¿Qué líder tribal luchó contra la ocupación romana de Gran Bretaña (Britania)?</string>
+    <string name="r_question_Historia_1_1">Tácito</string>
+    <string name="r_question_Historia_1_2">Boudica</string>
+    <string name="r_question_Historia_1_3">Ariovistus</string>
+    <string name="r_question_Historia_1_4">Prasutagus</string>
+
+    <string name="question_Historia_2">¿Con qué nombre se conoce el escándalo que obligó al presidente estadounidense Richard Nixon a dimitir?</string>
+    <string name="r_question_Historia_2_1">Vietnam</string>
+    <string name="r_question_Historia_2_2">Watergate</string>
+    <string name="r_question_Historia_2_3">Powergate</string>
+    <string name="r_question_Historia_2_4">Nixon Process</string>
+
+    <string name="question_Historia_3">¿Qué esposas de Enrique VIII fueron decapitadas?</string>
+    <string name="r_question_Historia_3_1">Ana de Cléveris y Ana Bolena</string>
+    <string name="r_question_Historia_3_2">Ana Bolena y Catherine Howard</string>
+    <string name="r_question_Historia_3_3">Ana Bolena y Catalina de Aragón</string>
+    <string name="r_question_Historia_3_4">Catalina Howard y Catalina Parr</string>
+
+    <string name="question_Historia_4">¿Qué emperador romano legalizó el cristianismo y puso fin a la persecución de los cristianos?</string>
+    <string name="r_question_Historia_4_1">Nerón</string>
+    <string name="r_question_Historia_4_2">Constantino</string>
+    <string name="r_question_Historia_4_3">Trajano</string>
+    <string name="r_question_Historia_4_4">Adriano</string>
+
+    <string name="question_Historia_5">¿Cuántas personas murieron durante el Gran Incendio de Londres de 1666 según los registros?</string>
+    <string name="r_question_Historia_5_1">60</string>
+    <string name="r_question_Historia_5_2">6</string>
+    <string name="r_question_Historia_5_3">600</string>
+    <string name="r_question_Historia_5_4">6000</string>
+
+
+    <string name="question_Historia_6">¿Qué hito informático de 1969 cambiaría radicalmente el curso de la historia de la humanidad?</string>
+    <string name="r_question_Historia_6_1">El primer ipod</string>
+    <string name="r_question_Historia_6_2">Internet</string>
+    <string name="r_question_Historia_6_3">El primer ordenador personal</string>
+    <string name="r_question_Historia_6_4">El primer router de wifi</string>
+
+    <string name="question_Historia_7">¿Qué hito informático de 1969 cambiaría radicalmente el curso de la historia de la humanidad?</string>
+    <string name="r_question_Historia_7_1">Abraham Lincoln</string>
+    <string name="r_question_Historia_7_2">George Washington</string>
+    <string name="r_question_Historia_7_3">Thomas Jefferson</string>
+    <string name="r_question_Historia_7_4">Andrew Jackson</string>
+
+    <string name="question_Historia_8">¿Por qué es significativo el Poema de Gilgamesh?</string>
+    <string name="r_question_Historia_8_1">Sobre un gigante llamado gilgamesh</string>
+    <string name="r_question_Historia_8_2">Es la primera obra epica que hacer referencia a la inmortalidad y la percepción huamana del alma</string>
+    <string name="r_question_Historia_8_3">El tratado de paz mas antiguo del mundo</string>
+    <string name="r_question_Historia_8_4">Una queja del pesimo servicio por parte del rey a sus trabajadores</string>
+
+    <string name="question_Historia_9">¿Cuál es el nombre de la famosa batalla donde Napoleón Bonaparte fue derrotado?</string>
+    <string name="r_question_Historia_9_1">La batalla del Álamo</string>
+    <string name="r_question_Historia_9_2">La batalla de Waterloo</string>
+    <string name="r_question_Historia_9_3">La batalla de Stalingrado</string>
+    <string name="r_question_Historia_9_4">La batalla de peubla</string>
+
+    <string name="question_Historia_10">¿A través de qué río africano se alzó el antiguo Egipto?</string>
+    <string name="r_question_Historia_10_1">Amazonas</string>
+    <string name="r_question_Historia_10_2">Nilo</string>
+    <string name="r_question_Historia_10_3">Tigris</string>
+    <string name="r_question_Historia_10_4">Éufrates</string>
+
+    <!-- Preguntas de Ciencia-->
+    <string name="question_Ciencia_1">Geografía. ¿Cuál es el país más grande del mundo?</string>
+    <string name="r_question_Ciencia_1_1">Canadá</string>
+    <string name="r_question_Ciencia_1_2">Rusia</string>
+    <string name="r_question_Ciencia_1_3">Estados Unidos</string>
+    <string name="r_question_Ciencia_1_4">Mexico</string>
+
+    <string name="question_Ciencia_2">Medicina. ¿Qué animal utilizó el Premio Nobel de medicina Ivan Pavlov en sus experimentos?</string>
+    <string name="r_question_Ciencia_2_1">Roedores</string>
+    <string name="r_question_Ciencia_2_2">Perros</string>
+    <string name="r_question_Ciencia_2_3">Gatos</string>
+    <string name="r_question_Ciencia_2_4">Loros</string>
+
+    <string name="question_Ciencia_3">¿Qué es el complejo de Edipo?</string>
+    <string name="r_question_Ciencia_3_1">Evidencia de un sentimiento morboso de celos exagerados</string>
+    <string name="r_question_Ciencia_3_2">Evidencia un sentimienyo romantico/sexual del niño hacia la madre, viendo al padre como rival</string>
+    <string name="r_question_Ciencia_3_3">Distorsión de la realidad</string>
+    <string name="r_question_Ciencia_3_4">Pensamiento del paciente que hace que piense que se encuentre en un programa de televisión</string>
+
+    <string name="question_Ciencia_4">¿Por qué es conocida la bióloga británica Jane Goodall?</string>
+    <string name="r_question_Ciencia_4_1">Por su estudio sobre los osos polares en el Artico</string>
+    <string name="r_question_Ciencia_4_2">Por su estudio sobre los primates de Tanzania</string>
+    <string name="r_question_Ciencia_4_3">Por su estudio sobre los koalas en Australia</string>
+    <string name="r_question_Ciencia_4_4">Por su estudio de los manatis en México</string>
+
+    <string name="question_Ciencia_5">¿Quiénes crearon el número 0?</string>
+    <string name="r_question_Ciencia_5_1">Los árabes</string>
+    <string name="r_question_Ciencia_5_2">Los mayas</string>
+    <string name="r_question_Ciencia_5_3">Los romanos</string>
+    <string name="r_question_Ciencia_5_4">Los griegos</string>
+
+    <string name="question_Ciencia_6">¿De dónde procede la famosa “piedra pómez”?</string>
+    <string name="r_question_Ciencia_6_1">Del fondo marino</string>
+    <string name="r_question_Ciencia_6_2">Del magma de los volcanes</string>
+    <string name="r_question_Ciencia_6_3">De las minas</string>
+    <string name="r_question_Ciencia_6_4">del espacio</string>
+
+    <string name="question_Ciencia_7">question_Science_7</string>
+    <string name="r_question_Ciencia_7_1">Iridio</string>
+    <string name="r_question_Ciencia_7_2">Osmio</string>
+    <string name="r_question_Ciencia_7_3">Wolframio</string>
+    <string name="r_question_Ciencia_7_4">Cobre</string>
+
+    <string name="question_Ciencia_8">¿Por qué es famoso el cometa Halley?</string>
+    <string name="r_question_Ciencia_8_1">Por ser el primer cometa descubierto por el hombre</string>
+    <string name="r_question_Ciencia_8_2">Por ser el primer cometa reconocido con orbita cíclica</string>
+    <string name="r_question_Ciencia_8_3">Por casi destruir la tierra</string>
+    <string name="r_question_Ciencia_8_4">Por su descubridor Galileo Galilei</string>
+
+    <string name="question_Ciencia_9"> El dinosaurio más pequeño que existió sobre la faz de la Tierra fue...</string>
+    <string name="r_question_Ciencia_9_1">El tiranosaurio rex</string>
+    <string name="r_question_Ciencia_9_2">El compsognathus</string>
+    <string name="r_question_Ciencia_9_3">El terodactilo</string>
+    <string name="r_question_Ciencia_9_4">El pisonosaurus</string>
+
+    <string name="question_Ciencia_10">¿De qué está compuesta la lluvia ácida?</string>
+    <string name="r_question_Ciencia_10_1">De ácido nítrico y acido clorhídrico</string>
+    <string name="r_question_Ciencia_10_2">De ácido sulfúrico y acido nítrico</string>
+    <string name="r_question_Ciencia_10_3">De ácido nítrico y úrico</string>
+    <string name="r_question_Ciencia_10_4">De oxido y potasio</string>
+
+    <!--Pregunta de programacion-->
+    <string name="question_Programación_1">Lenguaje de programación favorito de los hackers</string>
+    <string name="r_question_Programación_1_1">C#</string>
+    <string name="r_question_Programación_1_2">Python</string>
+    <string name="r_question_Programación_1_3">Perl</string>
+    <string name="r_question_Programación_1_4">go</string>
+
+    <string name="question_Programación_2">Lenguaje de programación militar creado por las fuerzas armadas de los Estados Unidos</string>
+    <string name="r_question_Programación_2_1">PHP</string>
+    <string name="r_question_Programación_2_2">Ada</string>
+    <string name="r_question_Programación_2_3">c++</string>
+    <string name="r_question_Programación_2_4">c</string>
+
+    <string name="question_Programación_3">La siguiente es una metodologpia agil de desarrollo de software</string>
+    <string name="r_question_Programación_3_1">Por capas</string>
+    <string name="r_question_Programación_3_2">DevOps</string>
+    <string name="r_question_Programación_3_3">Cascada</string>
+    <string name="r_question_Programación_3_4">Desarrollo por componentes</string>
+
+    <string name="question_Programación_4">IDE mas utilizada para desarrollo movil Android</string>
+    <string name="r_question_Programación_4_1">Visual Studio Code</string>
+    <string name="r_question_Programación_4_2">Android Studio</string>
+    <string name="r_question_Programación_4_3">Atom</string>
+    <string name="r_question_Programación_4_4">Sublime text</string>
+
+
+    <string name="question_Programación_5">Es elsguiente es un bucle</string>
+    <string name="r_question_Programación_5_1">ciclo latente</string>
+    <string name="r_question_Programación_5_2">ciclo for</string>
+    <string name="r_question_Programación_5_3">ciclo de pruebas</string>
+    <string name="r_question_Programación_5_4">ciclo de bus</string>
+
+
+    <string name="question_Programación_6">Ssistema operativo basado en UNIX utilizado mayormente para areas operativas del software</string>
+    <string name="r_question_Programación_6_1">Windows 10</string>
+    <string name="r_question_Programación_6_2">Linux</string>
+    <string name="r_question_Programación_6_3">Windows xp</string>
+    <string name="r_question_Programación_6_4">Android</string>
+
+    <string name="question_Programación_7">Lenguaje de etiquetas utilizado para el desarrollo de paginas web</string>
+    <string name="r_question_Programación_7_1">JavaScript</string>
+    <string name="r_question_Programación_7_2">HTML5</string>
+    <string name="r_question_Programación_7_3">R</string>
+    <string name="r_question_Programación_7_4">go</string>
+
+
+    <string name="question_Programación_8">Framework de desarrollo movil hibrido de nodeJS utilizado por facebook para su aplicación</string>
+    <string name="r_question_Programación_8_1">Flutter</string>
+    <string name="r_question_Programación_8_2">React Native</string>
+    <string name="r_question_Programación_8_3">Kivy</string>
+    <string name="r_question_Programación_8_4">Laravel</string>
+
+    <string name="question_Programación_9">El sigueinte es un lenguaje de programación utilizado para desarrollo nativo Android</string>
+    <string name="r_question_Programación_9_1">Swift</string>
+    <string name="r_question_Programación_9_2">Kotlin</string>
+    <string name="r_question_Programación_9_3">nodeJS</string>
+    <string name="r_question_Programación_9_4">PHP</string>
+
+    <string name="question_Programación_10">Framework de desarrollo web de python</string>
+    <string name="r_question_Programación_10_1">Laravel</string>
+    <string name="r_question_Programación_10_2">DJango</string>
+    <string name="r_question_Programación_10_3">Codeigniter</string>
+    <string name="r_question_Programación_10_4">Kivy</string>
+
+    <!--Preguntas de Cultura General-->
+    <string name="question_Cultura_1">¿Cuales son los 5 tipos de sabores primarios?</string>
+    <string name="r_question_Cultura_1_1">desagradable, bueno, decepcionante, triste y jugoso</string>
+    <string name="r_question_Cultura_1_2">dulce, amargo, acido, salado y umami</string>
+    <string name="r_question_Cultura_1_3">rojo, verde, azul, naranja y celeste</string>
+    <string name="r_question_Cultura_1_4">Liquido, gaseoso y solido</string>
+
+
+    <string name="question_Cultura_2">¿Cual es el lugar mas frio en la tierra?</string>
+    <string name="r_question_Cultura_2_1">Su corazon de ella :c</string>
+    <string name="r_question_Cultura_2_2">La antartida</string>
+    <string name="r_question_Cultura_2_3">Malasia</string>
+    <string name="r_question_Cultura_2_4">Péru</string>
+
+    <string name="question_Cultura_3">¿Quien escribio la odisea?</string>
+    <string name="r_question_Cultura_3_1">Odiseo</string>
+    <string name="r_question_Cultura_3_2">Homero</string>
+    <string name="r_question_Cultura_3_3">Filipo</string>
+    <string name="r_question_Cultura_3_4">El rey arturo</string>
+
+    <string name="question_Cultura_4">¿Cual es el rio mas largo del mundo ¿?</string>
+    <string name="r_question_Cultura_4_1">El nilo</string>
+    <string name="r_question_Cultura_4_2">El amazonas</string>
+    <string name="r_question_Cultura_4_3">El rio de grijalva</string>
+    <string name="r_question_Cultura_4_4">Rio papaloapan</string>
+
+    <string name="question_Cultura_5">Como se llama la actual reina del Reino Unidos</string>
+    <string name="r_question_Cultura_5_1">Alicia V</string>
+    <string name="r_question_Cultura_5_2">Isabel II</string>
+    <string name="r_question_Cultura_5_3">Bolena VI</string>
+    <string name="r_question_Cultura_5_4">Tricia VII</string>
+
+    <string name="question_Cultura_6">¿En qué continente esta Ecuador?</string>
+    <string name="r_question_Cultura_6_1">Asia</string>
+    <string name="r_question_Cultura_6_2">America</string>
+    <string name="r_question_Cultura_6_3">Africa</string>
+    <string name="r_question_Cultura_6_4">Autria</string>
+
+    <string name="question_Cultura_7">¿Donde se originaron los juegos olimpicos?</string>
+    <string name="r_question_Cultura_7_1">Roma</string>
+    <string name="r_question_Cultura_7_2">Grecia</string>
+    <string name="r_question_Cultura_7_3">Chile</string>
+    <string name="r_question_Cultura_7_4">Alemania</string>
+
+    <string name="question_Cultura_8">¿Que tipo de animal es la ballena?</string>
+    <string name="r_question_Cultura_8_1">Pez</string>
+    <string name="r_question_Cultura_8_2">Mamifero</string>
+    <string name="r_question_Cultura_8_3">Reptil</string>
+    <string name="r_question_Cultura_8_4">Anfibio</string>
+
+    <string name="question_Cultura_9">¿De que color es la bandera de México?</string>
+    <string name="r_question_Cultura_9_1">azul, blanco y rojo</string>
+    <string name="r_question_Cultura_9_2">verde, blanco y rojo</string>
+    <string name="r_question_Cultura_9_3">verde, amarillo y negro</string>
+    <string name="r_question_Cultura_9_4">blanca con un punto rojo</string>
+
+    <string name="question_Cultura_10">¿En que año finalizo la segunda guerra mundial?</string>
+    <string name="r_question_Cultura_10_1">1972</string>
+    <string name="r_question_Cultura_10_2">1945</string>
+    <string name="r_question_Cultura_10_3">1934</string>
+    <string name="r_question_Cultura_10_4">1957</string>
+
+    <!--Preguntas de Cine-->
+    <string name="question_Cine_1">Tu falta de fe me resulta perturbadora</string>
+    <string name="r_question_Cine_1_1">The Godfather</string>
+    <string name="r_question_Cine_1_2">Star Wars</string>
+    <string name="r_question_Cine_1_3">The Sting</string>
+    <string name="r_question_Cine_1_4">El club de la pelea</string>
+
+    <string name="question_Cine_2">Cancion que suena en los creditos del club de la pelea</string>
+    <string name="r_question_Cine_2_1">The beatles lucy in the sky with diamonds</string>
+    <string name="r_question_Cine_2_2">Where is my mind?</string>
+    <string name="r_question_Cine_2_3">Mariposa de amor</string>
+    <string name="r_question_Cine_2_4">Nirvana- come as you are</string>
+
+    <string name="question_Cine_3">Director que dirigio la cinta la naranja mecanica</string>
+    <string name="r_question_Cine_3_1">christian bale</string>
+    <string name="r_question_Cine_3_2">stanley kubrick</string>
+    <string name="r_question_Cine_3_3">Quentin tarantino</string>
+    <string name="r_question_Cine_3_4">Woody Allen</string>
+
+    <string name="question_Cine_4">Pelicula en la que aparece Bruce Willis y Jhon Travolta en el reparto</string>
+    <string name="r_question_Cine_4_1">Amores perros</string>
+    <string name="r_question_Cine_4_2">Pulp fiction</string>
+    <string name="r_question_Cine_4_3">La naranja mecanica</string>
+    <string name="r_question_Cine_4_4">Nosotros los nobles</string>
+
+    <string name="question_Cine_5">Ultima pelicula de Cameron Boyce</string>
+    <string name="r_question_Cine_5_1">Descendientes 2</string>
+    <string name="r_question_Cine_5_2">Runt</string>
+    <string name="r_question_Cine_5_3">Descendientes 3</string>
+    <string name="r_question_Cine_5_4">Descendientes 4</string>
+
+    <string name="question_Cine_6">Actor que inetrpreta a batman en la trilogia de Nolan</string>
+    <string name="r_question_Cine_6_1">Ben afleck</string>
+    <string name="r_question_Cine_6_2">christian bale</string>
+    <string name="r_question_Cine_6_3">Robert pattinson</string>
+    <string name="r_question_Cine_6_4">Adam west</string>
+
+    <string name="question_Cine_7">Pelicula en la que aparece keanu reeves en donde todo ocurre por un perro</string>
+    <string name="r_question_Cine_7_1">Matrix</string>
+    <string name="r_question_Cine_7_2">john wick</string>
+    <string name="r_question_Cine_7_3">Maxima velocidad</string>
+    <string name="r_question_Cine_7_4">Constantine</string>
+
+    <string name="question_Cine_8">Primer anime en ganar un oscar</string>
+    <string name="r_question_Cine_8_1">Death note</string>
+    <string name="r_question_Cine_8_2">El viaje de chihiro</string>
+    <string name="r_question_Cine_8_3">Naruto</string>
+    <string name="r_question_Cine_8_4">Dragon ball</string>
+
+    <string name="question_Cine_9">Actor que aparece en el video musical de Stylo de gorillaz</string>
+    <string name="r_question_Cine_9_1">johnny depp</string>
+    <string name="r_question_Cine_9_2">bruce willis</string>
+    <string name="r_question_Cine_9_3">will smith</string>
+    <string name="r_question_Cine_9_4">keanu reeves</string>
+
+    <string name="question_Cine_10">Serie de hacker mas cercana a la realidad</string>
+    <string name="r_question_Cine_10_1">Ningún sistema es seguro</string>
+    <string name="r_question_Cine_10_2">Mr robot</string>
+    <string name="r_question_Cine_10_3">Code porsuite</string>
+    <string name="r_question_Cine_10_4">Duro de matar</string>
+
+
+    <string name="final_1"> Your results :)</string>
+    <string name="final_2">You get </string>
+    <string name="final_3">correct answers :)</string>
 </resources>
