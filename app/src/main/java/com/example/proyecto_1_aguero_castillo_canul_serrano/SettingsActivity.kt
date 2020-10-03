@@ -98,23 +98,23 @@ class SettingsActivity : AppCompatActivity() {
 
         if(misPreferencias.getPistasActivas()){
             vtbpistas.isChecked = true
-            txvNoPistas.isVisible = true
-            vspnopistas.isVisible = true
+            txvNoPistas.visibility = View.VISIBLE
+            vspnopistas.visibility = View.VISIBLE
         }else{
             vtbpistas.isChecked = false
-            txvNoPistas.isVisible = false
-            vspnopistas.isVisible = false
+            txvNoPistas.visibility = View.INVISIBLE
+            vspnopistas.visibility = View.INVISIBLE
         }
 
         vtbpistas.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 // The toggle is enabled
-                txvNoPistas.isVisible = true
-                vspnopistas.isVisible = true
+                txvNoPistas.visibility = View.VISIBLE
+                vspnopistas.visibility = View.VISIBLE
             } else {
                 // The toggle is disabled
-                txvNoPistas.isVisible = false
-                vspnopistas.isVisible = false
+                txvNoPistas.visibility = View.INVISIBLE
+                vspnopistas.visibility = View.INVISIBLE
             }
         }
 
