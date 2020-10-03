@@ -2,7 +2,8 @@ package com.example.proyecto_1_aguero_castillo_canul_serrano
 
 import android.content.Context
 
-class MyPreferences(context : Context) {
+class MyPreferences(context: Context) {
+
     val PREFERENCES_NAME = "SharedPreferencesGame"
     val PREFERENCES_CANTIDAD_PREGUNTAS = "SharedPreferencesCantidadPreguntas"
     val PREFERENCES_NIVEL_ESTABLECIDO = "SharedPreferencesNivelEstablecido"
