@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.activity.viewModels
+import androidx.core.view.get
+import androidx.core.view.size
 import kotlin.random.Random
 
 class GameActivity : AppCompatActivity() {
@@ -20,6 +22,7 @@ class GameActivity : AppCompatActivity() {
     private lateinit var falseButton : Button
     private lateinit var nextButton : Button
     private lateinit var previousButton:Button
+    private lateinit var btnPista: Button
 
     private lateinit var listaRespuestas: ListView
 
@@ -37,12 +40,14 @@ class GameActivity : AppCompatActivity() {
         correctAnswersText = findViewById(R.id.correctAnswersText)
         nextButton = findViewById(R.id.next_button)
         previousButton = findViewById(R.id.previous_button)
+        btnPista= findViewById(R.id.botonPista)
 
 
         listaRespuestas= findViewById(R.id.respuestas)
 
         model.filtrateQuestions()
         model.showQuestions()
+        btnPista.text= "Pistas:"+model.getNumPistas().toString()
 
         questionTextView.setText(model.currentQuestionObj().strResId)
         questionCount.setText((model.currentQuestionNum()+1).toString()+"/"+model.numOfQuestions())
@@ -83,6 +88,54 @@ class GameActivity : AppCompatActivity() {
             asignedAnswers()
         }
 
+
+        btnPista.setOnClickListener{view:View ->
+
+
+            if(model.getNumPistas() >0){
+
+                var correctAnswer= model.getQuestionsToShow().get(model.currentQuestionNum()).correctanswer
+
+                var correctAnswerString: String = getString(correctAnswer)
+
+                var listaFinal= arrayListOf<String>()
+
+                model.resPista()
+                var text="Pistas:"+(model.getNumPistas()).toString()
+                btnPista.text= text
+
+                var tamañoLista= listaRespuestas.size
+
+
+                for(i in 0..tamañoLista-1){
+                    var itemValue= listaRespuestas.getItemAtPosition(i) as String
+                    listaFinal.add(itemValue)
+
+                }
+
+
+
+                var cont=0
+                for(element in listaFinal){
+                    if(listaFinal[cont]!= correctAnswerString){
+                        listaFinal.removeAt(cont)
+                        cont++
+                        break
+                    }else{
+                        cont++
+                    }
+                }
+
+                listaRespuestas.adapter=
+                    ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listaFinal)
+
+
+                model.setUsarPista(true)
+            }
+
+        }
+
+
         listaRespuestas.onItemClickListener = object : AdapterView.OnItemClickListener{
             override fun onItemClick(parent: AdapterView<*>, view: View,
                                      position: Int, id: Long) {
@@ -101,6 +154,7 @@ class GameActivity : AppCompatActivity() {
                         // Toast the values
                         Toast.makeText(applicationContext, "Dios mio le atinaste", Toast.LENGTH_LONG).show()
                         model.increaseCorrectQuestions()
+                        model.setUsarPista(false)
 
                     }else{
                         // Toast the values

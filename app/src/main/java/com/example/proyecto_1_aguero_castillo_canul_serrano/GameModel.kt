@@ -26,7 +26,7 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     private var answeredQuestions = 0
     private var correctQuestions: Float = 0f
     private var points : Float = 0f
-    private var usarPista =true
+    private var usarPista =false
 
     private val questions = listOf<Question>(
         Question(R.string.question_text_1, false, false),
@@ -325,6 +325,18 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     fun updateCurrentQuestion(value: Int) { currentQuestion = value }
 
     fun getDificult(): Int { return dificultad}
+
+    fun getNumPistas(): Int{ return numeroPistas}
+
+    fun getUsarPista(): Boolean {return usarPista}
+
+    fun setUsarPista(value:Boolean){ usarPista= value}
+
+
+
+    fun resPista(){
+        numeroPistas--
+    }
 
 }
 
