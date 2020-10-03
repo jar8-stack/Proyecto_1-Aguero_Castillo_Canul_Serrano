@@ -120,6 +120,12 @@ class MyPreferences(context: Context) {
         editor.apply()
     }
 
+    fun getTemasTodos() : Boolean{
+        return (preferences.getBoolean(PREFERENCES_TEMA_ARTE, false) && preferences.getBoolean(PREFERENCES_TEMA_CIENCIA, false)
+                && preferences.getBoolean(PREFERENCES_TEMA_CINE, false) && preferences.getBoolean(PREFERENCES_TEMA_HISTORIA, false)
+                && preferences.getBoolean(PREFERENCES_TEMA_PROGRAMACION, true) && preferences.getBoolean(PREFERENCES_TEMA_CULTURA, false))
+    }
+
     /*
     PARA PODER REALIZAR LA CONSULTA DE LOS DATOS SE INSTANCIA NUESTRA CLASE MyPreference en donde queremos usar las varaibles, de esta forma:
 

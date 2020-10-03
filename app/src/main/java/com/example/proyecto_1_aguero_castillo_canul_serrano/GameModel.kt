@@ -9,7 +9,7 @@ class GameModel(application: Application) : AndroidViewModel(application) {
 
     val misPreferencias = MyPreferences(getApplication())
 
-    private var temaTodos = false;
+    private var temaTodos = misPreferencias.getTemasTodos();
 
     private var temaArte = misPreferencias.getTemaArte();
     private var temaCiencia = misPreferencias.getTemaCiencia();
