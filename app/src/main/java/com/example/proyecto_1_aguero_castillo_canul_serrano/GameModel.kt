@@ -25,6 +25,8 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     private var currentQuestion = 0
     private var answeredQuestions = 0
     private var correctQuestions: Float = 0f
+    private var points : Float = 0f
+    private var usarPista =true
 
     private val questions = listOf<Question>(
         Question(R.string.question_text_1, false, false),
@@ -251,14 +253,12 @@ class GameModel(application: Application) : AndroidViewModel(application) {
         for (i in 0 until count)
         {
             var iquesToShow = makeRandom()
-            //validar si se repite??
             final_array2.add(questions[iquesToShow])
         }
         randoms = arrayListOf<Int>()
     }
     fun makeRandom() :Int
     {
-
         var num = (0..9).random()
         var i = 0
         outer@while (i < randoms.size){
@@ -273,6 +273,26 @@ class GameModel(application: Application) : AndroidViewModel(application) {
         randoms.add(num)
         return num
     }
+    fun pistaPena() :Float {
+        //var dificultad= arrayOf<String>("Baja", "Media", "Alta")
+        //var numQuestions= 10
+        var regla3= 10/numeroPreguntas
+        var res= 0f
+        var cate= dificultad
+
+        when(cate){
+            0->{
+                res= (regla3* 0.2).toFloat()
+            }
+            1->{
+                res= (regla3* 0.3).toFloat()
+            }
+            2 ->{
+                res= (regla3* 0.4).toFloat()
+            }
+        }
+        return res
+    }
 
     fun getQuestionsToShow():List<ThemeQuestion>{ return final_questions_toshow}
 
@@ -282,8 +302,20 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     fun currentQuestionObj(): ThemeQuestion { return final_questions_toshow[currentQuestion] }
 
     fun correctQuestions(): Float { return correctQuestions }
-    fun increaseCorrectQuestions() { correctQuestions++ }
+    fun increaseCorrectQuestions()
+    {
+        correctQuestions++
+        if(numeroPistas > 0 && usarPista){
+            var toincrease = pistaPena()
+            toincrease = 1-toincrease
+            points +=toincrease
+        } else{
+            points++
+        }
+        println(points)
+    }
 
+    fun getPoints():Float{return points}
     fun answeredQuestions(): Int { return answeredQuestions }
     fun increaseAnsweredQuestions() { answeredQuestions++ }
 

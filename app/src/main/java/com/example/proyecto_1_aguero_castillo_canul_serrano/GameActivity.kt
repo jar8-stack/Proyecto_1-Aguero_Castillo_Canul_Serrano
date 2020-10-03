@@ -104,9 +104,7 @@ class GameActivity : AppCompatActivity() {
 
                     }else{
                         // Toast the values
-                        Toast.makeText(applicationContext,
-                            "Nada chavo", Toast.LENGTH_LONG)
-                            .show()
+                        Toast.makeText(applicationContext, "Nada chavo", Toast.LENGTH_LONG).show()
                     }
                     model.currentQuestionObj().answered = true;
                     updateAnsweredQuestions()
@@ -140,12 +138,13 @@ class GameActivity : AppCompatActivity() {
     }
 
     fun calculateFinalResult(): String {
-        var result:Int = ((model.correctQuestions()/model.numOfQuestions())*100).toInt()
+        var result:Int = ((model.getPoints()/model.numOfQuestions())*100).toInt()
+        println("("+model.getPoints().toString() + "/" + model.numOfQuestions().toString()+") *100")
         return "$result%"
     }
 
     fun calculateResultWithoutPercent(): Int {
-        var result:Int = ((model.correctQuestions()/model.numOfQuestions())*100).toInt()
+        var result:Int = ((model.getPoints()/model.numOfQuestions())*100).toInt()
         return result
     }
 
