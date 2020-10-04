@@ -20,6 +20,7 @@ class GameModel(application: Application) : AndroidViewModel(application) {
 
     private var numeroPreguntas = misPreferencias.getCantidadPreguntas();
     private var dificultad = misPreferencias.getNivelEstablecido() //0->baja  1->media  2->alta
+    private var pistasActivas = misPreferencias.getPistasActivas()
     private var numeroPistas = misPreferencias.getCantidadPistas()
 
     private var currentQuestion = 0
@@ -212,35 +213,33 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     //funcion para filtrar preguntas
     public fun filtrateQuestions()
     {
-        if(!temaTodos){
-            var numOfTrueThemes = 0 //la cantidad de temas elegidos
-            var indexthemes = arrayListOf<Int>() //los indices de los temas elegidos
-            var themesCheck = arrayOf(temaArte,temaCiencia,temaCine,temaHistoria,temaProgramacion,themeCultura)
+        var numOfTrueThemes = 0 //la cantidad de temas elegidos
+        var indexthemes = arrayListOf<Int>() //los indices de los temas elegidos
+        var themesCheck = arrayOf(temaArte,temaCiencia,temaCine,temaHistoria,temaProgramacion,themeCultura)
 
-            for ((i,value) in themesCheck.withIndex())
-            {
-                if(value){
-                    //println(numOfTrueThemes)
-                    indexthemes.add(i)
-                    numOfTrueThemes++
-                }
+        for ((i,value) in themesCheck.withIndex())
+        {
+            if(value){
+                //println(numOfTrueThemes)
+                indexthemes.add(i)
+                numOfTrueThemes++
             }
-            var countsArrayDiv = recu2(10,numOfTrueThemes)
-            println(countsArrayDiv)
-            //println(numOfTrueThemes)
-            //println(countsArrayDiv)
-            for (i in 0 until numOfTrueThemes)
-            {
-                //print(i)
-                //println(indexthemes[i])
-                when (indexthemes[i]){
-                    0 -> chooseQuestions(arte_questions,countsArrayDiv[i])
-                    1 -> chooseQuestions(ciencia_questions,countsArrayDiv[i])
-                    2 -> chooseQuestions(cine_questions,countsArrayDiv[i])
-                    3 -> chooseQuestions(history_questions,countsArrayDiv[i])
-                    4 -> chooseQuestions(programacion_questions,countsArrayDiv[i])
-                    5 -> chooseQuestions(culture_questions,countsArrayDiv[i])
-                }
+        }
+        var countsArrayDiv = recu2(10,numOfTrueThemes)
+        println(countsArrayDiv)
+        //println(numOfTrueThemes)
+        //println(countsArrayDiv)
+        for (i in 0 until numOfTrueThemes)
+        {
+            //print(i)
+            //println(indexthemes[i])
+            when (indexthemes[i]){
+                0 -> chooseQuestions(arte_questions,countsArrayDiv[i])
+                1 -> chooseQuestions(ciencia_questions,countsArrayDiv[i])
+                2 -> chooseQuestions(cine_questions,countsArrayDiv[i])
+                3 -> chooseQuestions(history_questions,countsArrayDiv[i])
+                4 -> chooseQuestions(programacion_questions,countsArrayDiv[i])
+                5 -> chooseQuestions(culture_questions,countsArrayDiv[i])
             }
         }
         println(final_array2)
@@ -305,7 +304,7 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     fun increaseCorrectQuestions()
     {
         correctQuestions++
-        if(numeroPistas > 0 && usarPista){
+        if(usarPista && pistasActivas){
             var toincrease = pistaPena()
             toincrease = 1-toincrease
             points +=toincrease
@@ -326,9 +325,10 @@ class GameModel(application: Application) : AndroidViewModel(application) {
 
     fun getDificult(): Int { return dificultad}
 
+    fun pistasActivas():Boolean{return pistasActivas}
     fun getNumPistas(): Int{ return numeroPistas}
 
-    fun getUsarPista(): Boolean {return usarPista}
+    //fun getUsarPista(): Boolean {return usarPista}
 
     fun setUsarPista(value:Boolean){ usarPista= value}
 

@@ -47,20 +47,22 @@ class GameActivity : AppCompatActivity() {
 
         model.filtrateQuestions()
         model.showQuestions()
-        btnPista.text= "Pistas:"+model.getNumPistas().toString()
+
+        if(model.pistasActivas())
+        {
+            btnPista.visibility = View.VISIBLE
+            btnPista.text= "Pistas:"+model.getNumPistas().toString()
+        }
 
         questionTextView.setText(model.currentQuestionObj().strResId)
         questionCount.setText((model.currentQuestionNum()+1).toString()+"/"+model.numOfQuestions())
         questionsAnswered.setText(" : "+model.answeredQuestions())
 
-        if(model.answeredQuestions() == 6){
+        if(model.answeredQuestions() == model.numOfQuestions()){
             yourResultsText.setText(R.string.final_1)
             resultText.setText(calculateFinalResult())
 
             correctAnswersText.setText(model.correctQuestions().toInt().toString() + " correct answers")
-
-
-
         }
 
 
@@ -92,7 +94,7 @@ class GameActivity : AppCompatActivity() {
         btnPista.setOnClickListener{view:View ->
 
 
-            if(model.getNumPistas() >0){
+            if(model.getNumPistas() >0 && !model.currentQuestionObj().answered){
 
                 var correctAnswer= model.getQuestionsToShow().get(model.currentQuestionNum()).correctanswer
 

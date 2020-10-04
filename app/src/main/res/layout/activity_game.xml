@@ -90,17 +90,19 @@
             android:text="@string/next_button" />
 
 
-        <Button
-            android:id="@+id/botonPista"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp">
 
-        </Button>
 
 
     </LinearLayout>
+    <Button
+        android:id="@+id/botonPista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        >
 
+    </Button>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
