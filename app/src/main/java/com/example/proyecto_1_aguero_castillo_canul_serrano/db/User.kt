@@ -1,7 +1,9 @@
 package com.example.proyecto_1_aguero_castillo_canul_serrano.db
 
+import android.content.res.Configuration
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "usuario")
