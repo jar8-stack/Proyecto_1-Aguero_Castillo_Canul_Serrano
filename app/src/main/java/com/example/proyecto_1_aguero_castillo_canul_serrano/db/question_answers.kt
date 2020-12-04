@@ -5,6 +5,7 @@ import androidx.room.Entity
 
 @Entity(tableName = "question_answers")
 data class question_answers(
+    @ColumnInfo(name = "id") val id: Int,
     @ColumnInfo(name = "text") var text: String,
     @ColumnInfo(name = "correct_answer") var correct_answer: Boolean
 )

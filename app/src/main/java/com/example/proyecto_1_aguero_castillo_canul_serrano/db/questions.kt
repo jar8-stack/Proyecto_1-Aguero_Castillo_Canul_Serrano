@@ -7,6 +7,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "questions")
 data class questions(
     @PrimaryKey @ColumnInfo(name = "id") val id: Int,
-    //Foreing key
+    @ColumnInfo(name = "theme_id") val theme_id: Int,
     @ColumnInfo(name = "text") var text: String
 )
