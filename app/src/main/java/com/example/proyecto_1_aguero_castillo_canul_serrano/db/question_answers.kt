@@ -7,4 +7,5 @@ import androidx.room.Entity
 data class question_answers(
     @ColumnInfo(name = "id") val id: Int,
     @ColumnInfo(name = "text") var text: String,
+    @ColumnInfo(name = "correct_answer") var correct_answer: Boolean
 )
