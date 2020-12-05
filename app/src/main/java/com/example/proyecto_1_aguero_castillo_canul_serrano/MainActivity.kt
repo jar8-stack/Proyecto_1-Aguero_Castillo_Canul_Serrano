@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java,
-            "quizapp_1_2.db"
+            "quizapp_1_3.db"
         ).allowMainThreadQueries().addCallback(object : RoomDatabase.Callback(){
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
