@@ -52,6 +52,7 @@ class GameModel(application: Application) : AndroidViewModel(application) {
         ThemeQuestion(R.string.question_Arte_10,listOf<Int>(R.string.r_question_Arte_10_1, R.string.r_question_Arte_10_2, R.string.r_question_Arte_10_3, R.string.r_question_Arte_10_4),R.string.r_question_Arte_10_2, "Arte", false)
     )
 
+    //Hola mundo
     private val history_questions = listOf<ThemeQuestion>(
         ThemeQuestion(R.string.question_Historia_1, listOf<Int>(R.string.r_question_Historia_1_1, R.string.r_question_Historia_1_2, R.string.r_question_Historia_1_3, R.string.r_question_Historia_1_4),R.string.r_question_Historia_1_2, "Historia", false),
         ThemeQuestion(R.string.question_Historia_2, listOf<Int>(R.string.r_question_Historia_2_1, R.string.r_question_Historia_2_2, R.string.r_question_Historia_2_3, R.string.r_question_Historia_2_4),R.string.r_question_Historia_2_2, "Historia", false),

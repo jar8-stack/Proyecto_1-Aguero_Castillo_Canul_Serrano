@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
                 super.onCreate(db)
 
 
-                db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0)")
+                db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
 
-                db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba', 0, 1)")
+                db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba', 0, 1);")
 
             }}).build()
 
@@ -45,11 +45,10 @@ class MainActivity : AppCompatActivity() {
             val intent:Intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
+
         btnGame.setOnClickListener {
             val intent:Intent = Intent(this, GameActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 }
