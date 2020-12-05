@@ -20,9 +20,10 @@ interface ThemesDao {
     @Query("SELECT id FROM themes WHERE description LIKE :description LIMIT 1")
     fun getThemeId(description: String): Int
 
-    @Query("SELECT * FROM usuario WHERE nombre_usuario= :nombre_usuario")
-    fun getUsuario(nombre_usuario: String): User
-
+    /*
+    @Query("SELECT id_usuario FROM usuario WHERE nombre_usuario= :user_name")
+    fun getUsuario(user_name: String): Int
+    */
     @Update
     fun updateTheme(theme: Theme)
 

@@ -28,9 +28,14 @@ class MainActivity : AppCompatActivity() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
 
+
+                db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
+
+                db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba', 0, 1);")
+
             }}).build()
 
-        val user= db.themeDao().getUsuario("usuario_prueba")
+        val user= db.userDao().getUser()
 
 
 
