@@ -23,22 +23,21 @@ class MainActivity : AppCompatActivity() {
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java,
-            "olo.db"
+            "quizapp_1.db"
         ).allowMainThreadQueries().addCallback(object : RoomDatabase.Callback(){
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
 
-
-                db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
-
-                db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba', 0, 1);")
+                /*db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
+                db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba', 0, 1);")*/
+                insertThemes(db)
+                insertDefaultConfig(db)
+                insertQuestionsWAnswers(db)
 
             }}).build()
 
-        val user= db.userDao().getUser()
-
-
-
+        //db.userDao().insertUser("Stunbox",0,1) funcion para insertar usuario
+        val themes= db.themeDao().getThemes()
 
 
         btnSettings.setOnClickListener {
@@ -50,5 +49,19 @@ class MainActivity : AppCompatActivity() {
             val intent:Intent = Intent(this, GameActivity::class.java)
             startActivity(intent)
         }
+    }
+    fun insertThemes(db:SupportSQLiteDatabase){
+        db.execSQL("INSERT INTO [themes](description) VALUES('Arte');")
+        db.execSQL("INSERT INTO [themes](description) VALUES('Ciencia');")
+        db.execSQL("INSERT INTO [themes](description) VALUES('Cine');")
+        db.execSQL("INSERT INTO [themes](description) VALUES('Historia');")
+        db.execSQL("INSERT INTO [themes](description) VALUES('Programacion');")
+        db.execSQL("INSERT INTO [themes](description) VALUES('Cultura General');")
+    }
+    fun insertDefaultConfig(db: SupportSQLiteDatabase){
+        db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
+    }
+    fun insertQuestionsWAnswers(db: SupportSQLiteDatabase){
+
     }
 }
