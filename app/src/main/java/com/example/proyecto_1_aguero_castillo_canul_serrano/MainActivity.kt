@@ -23,20 +23,21 @@ class MainActivity : AppCompatActivity() {
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java,
-            "olo.db"
+            "quizzapp.db"
         ).allowMainThreadQueries().addCallback(object : RoomDatabase.Callback(){
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
 
 
-                db.execSQL("INSERT INTO configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
+                db.execSQL("INSERT INTO quizzapp.configurations(number_questions, dificulty, number_tracks, tracks_enabled) VALUES(5, 'Facil', 0, 0);")
 
                 db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba', 0, 1);")
+                db.execSQL("INSERT INTO usuario(nombre_usuario, score_usuario, id_configuration) VALUES('usuario_prueba2_olo', 0, 1);")
 
             }}).build()
 
         val user= db.userDao().getUser()
-
+        //Hola mundo
 
 
 
