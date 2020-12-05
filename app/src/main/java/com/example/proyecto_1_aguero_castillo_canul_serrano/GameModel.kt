@@ -136,7 +136,6 @@ class GameModel(application: Application) : AndroidViewModel(application) {
             when(cate){
                 "Historia"->{
                     listaOlo.get(3).num+=1
-
                 }
                 "Ciencia"->{
                     listaOlo.get(1).num+=1
