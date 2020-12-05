@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*
+
         Stetho.initializeWithDefaults(this)
 
         val db = Room.databaseBuilder(
@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         val user= db.themeDao().getUsuario("usuario_prueba")
 
-        print("Hola mundo")
 
-         */
+
+
 
         btnSettings.setOnClickListener {
             val intent:Intent = Intent(this, SettingsActivity::class.java)
