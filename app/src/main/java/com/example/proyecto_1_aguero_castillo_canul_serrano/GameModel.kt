@@ -1,9 +1,8 @@
 package com.example.proyecto_1_aguero_castillo_canul_serrano
 
 import android.app.Application
-import android.content.Context
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
+import com.example.proyecto_1_aguero_castillo_canul_serrano.Preferences.MyPreferences
 
 class GameModel(application: Application) : AndroidViewModel(application) {
 
