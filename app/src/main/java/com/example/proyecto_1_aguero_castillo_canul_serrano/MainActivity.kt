@@ -3,6 +3,7 @@ package com.example.proyecto_1_aguero_castillo_canul_serrano
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
@@ -33,8 +34,24 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnGame.setOnClickListener {
-            val intent:Intent = Intent(this, GameActivity::class.java)
-            startActivity(intent)
+
+
+            val mAlertDialogJuego= AlertDialog.Builder(this@MainActivity)
+            mAlertDialogJuego.setTitle("Returnar juego")
+            mAlertDialogJuego.setMessage("¿Desea reanudar partida?")
+            mAlertDialogJuego.setPositiveButton("Si") MainActivity@{ dialog, id ->
+                //Reanudar partida guardada
+                val intent:Intent = Intent(this, GameActivity::class.java)
+                startActivity(intent)
+            }
+
+            mAlertDialogJuego.setNegativeButton("No"){dialog, id ->
+                //Partida nueva
+                val intent:Intent = Intent(this, GameActivity::class.java)
+                startActivity(intent)
+            }
+
+            mAlertDialogJuego.show()
         }
     }
 }
