@@ -7,7 +7,6 @@ interface ThemesDao {
     @Query("SELECT id, description FROM themes")
     fun getThemes(): List<Theme>
 
-
     @Query("SELECT* FROM THEMES WHERE id >= :lowId AND id <= :highId")
     fun getThemes(lowId: Int, highId: Int): List<Theme>
 
