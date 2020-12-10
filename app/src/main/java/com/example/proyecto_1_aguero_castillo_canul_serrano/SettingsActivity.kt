@@ -6,9 +6,8 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
+import com.example.proyecto_1_aguero_castillo_canul_serrano.Preferences.MyPreferences
 import kotlinx.android.synthetic.main.activity_settings.*
 
 
