@@ -10,7 +10,12 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.get
 import androidx.core.view.size
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import androidx.sqlite.db.SupportSQLiteDatabase
+import com.example.proyecto_1_aguero_castillo_canul_serrano.db.AppDatabase
 import kotlin.random.Random
+
 
 class GameActivity : AppCompatActivity() {
 
@@ -32,13 +37,16 @@ class GameActivity : AppCompatActivity() {
     private val model : GameModel by viewModels()
 
 
+
     override fun onBackPressed() {
+
         val mAlertDialog= AlertDialog.Builder(this@GameActivity)
         mAlertDialog.setTitle("Salir de partida")
         mAlertDialog.setMessage("¿Desea salir de la partida?")
         mAlertDialog.setPositiveButton("Si") MainActivity@{ dialog, id ->
             //Toast.makeText(this@GameActivity, "Si", Toast.LENGTH_SHORT).show()
             super.onBackPressed()
+
             return@MainActivity
         }
 
@@ -110,7 +118,6 @@ class GameActivity : AppCompatActivity() {
 
             asignedAnswers()
         }
-
 
         btnPista.setOnClickListener{view:View ->
 

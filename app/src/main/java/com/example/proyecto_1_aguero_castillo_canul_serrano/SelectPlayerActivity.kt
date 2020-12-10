@@ -19,7 +19,7 @@ import java.io.Console
 class SelectPlayerActivity : AppCompatActivity() {
 
     private var arrayAdapter: ArrayAdapter<String>? = null
-
+    private val dbValues:Database = Database()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_player)
@@ -35,7 +35,7 @@ class SelectPlayerActivity : AppCompatActivity() {
             val db = Room.databaseBuilder(
                 applicationContext,
                 AppDatabase::class.java,
-                "quizapp_1_7.db"
+                dbValues.getName()
             ).allowMainThreadQueries().addCallback(object : RoomDatabase.Callback(){
                 override fun onCreate(db: SupportSQLiteDatabase) {
                     super.onCreate(db)
