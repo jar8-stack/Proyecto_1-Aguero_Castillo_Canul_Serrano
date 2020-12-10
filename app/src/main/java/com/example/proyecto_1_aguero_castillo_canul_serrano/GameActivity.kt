@@ -13,6 +13,7 @@ import androidx.core.view.size
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.example.proyecto_1_aguero_castillo_canul_serrano.Preferences.MyPreferences
 import com.example.proyecto_1_aguero_castillo_canul_serrano.db.AppDatabase
 import kotlin.random.Random
 
@@ -35,10 +36,15 @@ class GameActivity : AppCompatActivity() {
 
 
     private val model : GameModel by viewModels()
-
-
+    private val dbValues:Database = Database()
 
     override fun onBackPressed() {
+        val db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            dbValues.getName()
+        ).allowMainThreadQueries().addCallback(object : RoomDatabase.Callback(){
+            }).build()
 
         val mAlertDialog= AlertDialog.Builder(this@GameActivity)
         mAlertDialog.setTitle("Salir de partida")
@@ -47,6 +53,15 @@ class GameActivity : AppCompatActivity() {
             //Toast.makeText(this@GameActivity, "Si", Toast.LENGTH_SHORT).show()
             super.onBackPressed()
 
+            //pendiente id usuario
+            var id_user = 0
+            var currentQuestion = model.currentQuestionNum()
+            var answeredQuestions = model.answeredQuestions()
+            var correctQuestions = model.correctQuestions()
+            var points = model.getPoints()
+            var useHint = model.getUsarPista()
+
+            db.UserMatchesDao().insertMatch(id_user.toString().toInt(),currentQuestion,answeredQuestions,correctQuestions,points,useHint)
             return@MainActivity
         }
 

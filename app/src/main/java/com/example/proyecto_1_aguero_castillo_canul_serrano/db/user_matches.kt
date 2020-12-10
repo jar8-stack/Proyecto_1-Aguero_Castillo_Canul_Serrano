@@ -10,7 +10,7 @@ data class User_matches(
     @ColumnInfo(name = "id_usuario") val id_usuario:Int,
     @ColumnInfo(name = "current_question") var current_question:Int,
     @ColumnInfo(name = "answered_question") var answered_question:Int,
-    @ColumnInfo(name = "correct_questions") var correct_questions:Int,
-    @ColumnInfo(name = "points") var points:Int,
+    @ColumnInfo(name = "correct_questions") var correct_questions:Float,
+    @ColumnInfo(name = "points") var points:Float,
     @ColumnInfo(name = "use_hint") var use_hint:Boolean
 )

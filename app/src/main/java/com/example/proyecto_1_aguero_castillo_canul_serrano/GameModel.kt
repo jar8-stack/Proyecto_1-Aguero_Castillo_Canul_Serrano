@@ -327,7 +327,7 @@ class GameModel(application: Application) : AndroidViewModel(application) {
     fun pistasActivas():Boolean{return pistasActivas}
     fun getNumPistas(): Int{ return numeroPistas}
 
-    //fun getUsarPista(): Boolean {return usarPista}
+    fun getUsarPista(): Boolean {return usarPista}
 
     fun setUsarPista(value:Boolean){ usarPista= value}
 
