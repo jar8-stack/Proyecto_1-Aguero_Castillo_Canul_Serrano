@@ -12,4 +12,8 @@ data class User(
     @ColumnInfo(name = "nombre_usuario") var nombre_usuario: String,
     @ColumnInfo(name = "score_usuario") var score_usuario: Int,
     @ColumnInfo(name = "id_configuration") val id_configuration: Int
-)
+){
+    override fun toString(): String {
+        return "${id_usuario}-${nombre_usuario}"
+    }
+}
