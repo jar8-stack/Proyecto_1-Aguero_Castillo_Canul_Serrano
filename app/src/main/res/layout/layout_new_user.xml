@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Registro de Usuario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Ingresa el nombre del usuario"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:layout_below="@+id/tv_title"/>
+
+    <EditText
+        android:layout_below="@id/tv_detail"
+        android:id="@+id/edtNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ej: Juan Perez" />
+
+
+    <Button
+        android:id="@+id/bt_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar al Juego"
+        android:layout_below="@+id/edtNombreUsuario"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        />
+
+
+
+</RelativeLayout>
