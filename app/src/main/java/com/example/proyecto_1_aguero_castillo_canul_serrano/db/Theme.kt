@@ -10,3 +10,11 @@ data class Theme(
     @PrimaryKey @ColumnInfo(name="id") val id: Int,
     @ColumnInfo(name="description") var description: String
 )
+
+/**
+ * {
+override fun toString(): Int {
+return id
+}
+}
+ */
