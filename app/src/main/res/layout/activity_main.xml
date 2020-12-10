@@ -30,7 +30,17 @@
     app:shake_direction="horizontal"
     />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="HOLA PERRO"
+        android:gravity="center"
+        android:id="@+id/nombreUsuario"
+        android:layout_marginTop="190dp"
+        android:textSize="25sp"/>
+
     <ImageView
+        android:layout_below="@+id/nombreUsuario"
         android:id="@+id/logoadasdasd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,5 +70,16 @@
             android:text="Opciones"
             android:textSize="30sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoadasdasd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="10dp"
+        android:text="Cerrar Sesión"
+        android:textSize="15sp" />
 
 </RelativeLayout>
