@@ -35,7 +35,7 @@ class SelectPlayerActivity : AppCompatActivity() {
             val db = Room.databaseBuilder(
                 applicationContext,
                 AppDatabase::class.java,
-                "quizapp_1_6.db"
+                "quizapp_1_7.db"
             ).allowMainThreadQueries().addCallback(object : RoomDatabase.Callback(){
                 override fun onCreate(db: SupportSQLiteDatabase) {
                     super.onCreate(db)
@@ -79,12 +79,11 @@ class SelectPlayerActivity : AppCompatActivity() {
                         //OBTENEMOS EL ULTIMO ID DE LA CONFIGURACION AÑADIDA -- EL ANTERIOR
                         val id_configuracion = db.configurationDao().traerUltimoIdConfiguraciones()
 
-                        val id_usuario = db.userDao().traerUltimoIdUsuarios();
-
                         Log.d("ID_CONFIGURACION",""+id_configuracion);
 
                         //CREAMOS EL USUARIO CON SU CONFIGURACION PROPIA
                         db.userDao().insertUser(nombreUsuario.text.toString(),0,id_configuracion)
+                        val id_usuario = db.userDao().traerUltimoIdUsuarios();
 
                         //VOLVEMOS A LLENAR EL SPINNER
                         var nuevaData = db.userDao().getUsers()
